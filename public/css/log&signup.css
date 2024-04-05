@@ -1,0 +1,86 @@
+/* signup page */
+
+@media (max-width:750px) {
+    .signup-form {
+        position: relative;
+        right:10px;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+/* .email-signup-box {
+    width: 350px;
+}
+
+.username-signup-box {
+    width: 350px;
+}
+
+.password-signup-box {
+    width: 350px;
+} */
+
+/* login page */
+
+@media (max-width:750px) {
+    /* .login-form {
+        position: relative;
+        right:10px;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+    } */
+    .login-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .username-box {
+        width: 180px;
+    }
+    .password-box {
+        width: 180px;
+    }
+}
+
+
+.signup-button a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 46%;
+    top: 65px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: black;
+
+}
+
+@media (max-width:1280px) {
+    .signup-button {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

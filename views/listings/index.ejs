@@ -1,0 +1,116 @@
+<% layout("/layouts/boilarplate.ejs") %>
+<link rel="stylesheet" href="/css/index.css">
+
+<div class="arrows fixed">
+    <div class="left-arrow active">
+        <i class="fa-solid fa-angle-left"></i>
+    </div>
+    <div class="right-arrow active">
+        <i class="fa-solid fa-angle-right"></i>
+    </div> 
+</div>
+    <div class="scrollable-tabs-container">
+        <ul class="filter">
+            <li>
+                <i class="fa-solid fa-fire"></i>
+                <a>Trending</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a>Rooms</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-mountain-city"></i>
+                <a>Iconic Cities</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-fort-awesome"></i>
+                <a>Castles</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-tree"></i>
+                <a>Treehouses</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-chair"></i>
+                <a>Beach</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-mountain"></i>
+                <a>Mountains</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                <a>Plays</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-campground"></i>
+                <a>Campings</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cow"></i>
+                <a>Farms</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-person-swimming"></i>
+                <a>Amazing pools</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <a>Islands</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a>Hotels Rooms</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-sailboat"></i>
+                <a>Bunglow</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-sailboat"></i>
+                <a>Boats</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="tax-toggle toggle-btn">
+    <div class="form-check-reverse form-switch ">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label for="flexSwitchCheckDefault" class="form-check-label">Display total after taxes</label>
+    </div>
+</div>
+    </div>       
+
+    <div>
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 listing-list">
+        <% for(let listing of allListings){ %>
+        <a href="/listings/<%= listing._id %>" class="listing-link">
+            <div class="card mt-1 listing-card">
+                <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_img" style="height: 20rem;">
+                <div class="card-img-overlay"></div>
+                <div class="card-body">
+                    <p class="card-text"><b><%= listing.title %> </b><br>&#8377; <%= listing.price %> / night<i class="tax-info">&nbsp; &nbsp; +18% GST</i></p>
+                </div>
+            </div>
+        </a>
+            <% } %>
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+    <script>
+        let taxSwitch = document.getElementById("flexSwitchCheckDefault");
+        taxSwitch.addEventListener("click", ()=> {
+            let taxInfo = document.getElementsByClassName("tax-info");
+            for(info of taxInfo){
+                if(info.style.display != "inline"){
+                    info.style.display = "inline"
+                } else {
+                    info.style.display = "none"
+                }
+            }
+        })
+    </script>
+

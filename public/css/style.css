@@ -1,0 +1,206 @@
+body {
+    font-family: sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar {
+    height: 4rem;
+    background-color: white;
+
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+
+/* Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* card effect */
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+};
+
+/* New page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+@media (max-width:992px) {
+    .heading-create-list {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .new-page {
+        position: relative;
+        right: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .new-page-form {
+        display: flex;
+        flex-direction: column;
+        columns: 7;
+    }
+}
+
+/* Edit page  */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+@media (max-width:768px) {
+    .heading-edit-list {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:436px) {
+    .edit-list {
+        display: flex;
+        position: relative;
+        right: 1.5rem;
+    }
+}
+
+.preview-img {
+    height: 230px;
+    width: 260px;
+}
+
+
+
+
+/* Show page */
+
+.show-img {
+    height: 30vh;
+
+}
+
+.btns {
+    display: flex;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+.previous-page {
+    color: black;
+    position: relative;
+    right: 50px;
+    font-size: 23px;
+    opacity: 0.7;
+}
+
+.previous-page:hover {
+    opacity: 1;
+}
+
+@media (max-width:716px) {
+    .previous-page {
+        position: relative;
+        margin-left: 70px;
+    }
+}
+
+
+@media (max-width:768px) {
+    #review-container {
+        display: block;
+    }
+}
+
+@media (max-width:768px) {
+    .show-page {
+        position: relative;
+        right: 20px;
+    }
+}
+
+/* map */
+
+#map {
+    height: 350px;
+    width: 600px;
+}
+
+.Airbnb {
+    border: 2px solid black;
+}
+
+@media(max-width:888px),(max-width:400px),(max-width:368px){
+    #map {
+        height: 300px;
+        width: 400px;
+    }
+    #map {
+        height: 200px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    #map{
+        height: 200px;
+        width: 200px;
+    }
+}

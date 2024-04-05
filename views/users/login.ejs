@@ -1,0 +1,25 @@
+<% layout("/layouts/boilarplate.ejs") %>
+<link rel="stylesheet" href="/css/log&signup.css" >
+
+<div class="row mt-5">
+    <h1 class="col-4 offset-4 mb-3">Log in on Airbnb</h1>
+    <div class="col-4 offset-4 login-form">
+        <form action="/login" method="POST" novalidate class="needs-validation">
+            <div class="mb-2 mt-4">
+                <label for="username" class="form-label username-box">Username :</label>
+                <input name="username" type="text" class="form-control username-box" id="username" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="password" class="form-label password-box">Password :</label>
+                <input name="password" type="password" class="form-control password-box" id="password" required>
+            </div>
+            <button class="btn btn-success mt-3">Login</button>
+        </form>
+    </div>
+    <div class="signup-button">
+        <a href="/signup">Sign Up</a>
+    </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br>

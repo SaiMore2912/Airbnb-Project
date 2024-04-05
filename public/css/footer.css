@@ -1,0 +1,68 @@
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .fa-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 7rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.f-info-2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ebebeb;
+    cursor: pointer;
+    margin-top: 5px;
+    margin: 0 1rem 0 1rem;
+    user-select: none;
+    padding: 0 30px 0 30px;
+}
+
+.f-info-2 h5 {
+    font-size: bold;
+    margin-top: 18px;
+    margin-bottom: 11px;
+}
+
+.f-info-2 p {
+    opacity: 0.7;
+}
+
+.f-info-2 p:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+@media (max-width:480px) {
+    .f-info-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+}

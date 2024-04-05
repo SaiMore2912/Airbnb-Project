@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/navbar.css">
+
+
+<nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top ">
+  <a class="fa-brands fa-airbnb icon-airbnb" href="/listings"></a>
+  <a class="text-airbnb" href="/listings">Airbnb</a>
+  <div class="navbar-nav navbar-collapse navbar-expand-md ms-auto search-box">
+    <form class="d-flex search-inp" role="search"> 
+      <input class="form-control me-2" id="find" type="search" placeholder="Search destinations...">
+      <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+    
+  <a class="your-home" href="/listings/new"><b>Airbnb your home</b></a>
+  <div class="dropdown ms-auto links">
+    <button class="btn btn-info" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+      <i class="fa-solid fa-bars bar-icon"></i>
+      <i class="fa-solid fa-user user-icon"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <% if(!currUser) { %>
+      <li><a class="dropdown-item" href="/signup"><b>Sign Up</b></a></li>
+      <li><a class="dropdown-item" href="/login"><b>Log In</b></a></li>
+      <% } %>
+      <hr>
+      <li><a class="dropdown-item" href="/listings/new">Create Airbnb</a></li>
+      <li><a class="dropdown-item" href="/listings">All Listings</a></li>
+      <% if(currUser) { %>
+        <a class="dropdown-item" href="/logout"><b>Log out</b></a>
+        <% } %>
+     </ul>
+  </div>
+  </nav>
+
+  <script src="js/index.js"></script>

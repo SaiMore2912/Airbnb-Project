@@ -1,0 +1,98 @@
+
+.btn-search {
+    background-color: #fe4242;
+    color: white;
+    border-radius: 25px
+  }
+
+  .btn-search:hover {
+    background-color: #fe4242;
+    color: white;
+  }
+
+  .btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+    text-align: center;
+  }
+
+
+  .search-inp {
+    position: absolute;
+    right: 40%;
+    top: 20%;
+  }
+
+  .links {
+    margin-right: 20px;
+  }
+
+  .bar-icon {
+    font-size: 13px;
+    margin-right: 6px;
+  }
+
+  .btn-info {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 18px;
+  }
+
+  .btn-info:hover {
+    background-color: white;
+  }
+
+  .your-home {
+    margin-top: 7px;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+  }
+
+  .your-home:hover {
+    background-color: rgba(0, 0, 0, 0.071);
+    border: 0px solid black;
+    border-radius: 10px;
+    text-decoration: none !important;
+  }
+
+  .icon-airbnb {
+    font-size: 29px;
+    text-decoration: none;
+    color: #fe4242;
+    margin-left: 14px;
+    user-select: none;
+  }
+
+  .text-airbnb {
+    font-size: 22px;
+    color: #fe4242;
+    position: relative;
+    left: 6px;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  @media(max-width:482px) {
+    .search-inp {
+      position: absolute;
+      right: 28%;
+      margin-left: 15px;
+    }
+  }
+
+  @media(max-width:1000px){
+    .your-home {
+      display: none;
+    }
+    .icon-airbnb {
+      display: none;
+    }
+    .text-airbnb {
+      display: none;
+    }
+  }
+
